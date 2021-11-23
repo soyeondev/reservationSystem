@@ -1,0 +1,53 @@
+@value makerBlue, makerBlack, makerWhite, makerGrey from 'common/color.css';
+
+/* common */
+.bold {
+  font-weight: bold;
+}
+
+/* font */
+.fc__grey {
+  color: #9f9f9f;
+}
+
+.fc__blue {
+  color: makerBlue;
+}
+
+.fc__black {
+  color: makerBlack;
+}
+
+/* display */
+.dp__blk {
+  display: block;
+}
+
+.dp__in__flx {
+  display: inline-flex;
+}
+
+.dp__flx {
+  display: flex;
+}
+
+.flt__l {
+  float: left;
+}
+
+.flt__r {
+  float: right;
+}
+
+/* margin */
+.m__0__auto {
+  margin: 0 auto;
+}
+.ml__5 {
+  margin-left: 5px;
+}
+
+/* background */
+.bg__yellow {
+  background-color: #fff9e4;
+}
