@@ -8,7 +8,8 @@ const Routes = (props) => (
   <div className={styles.app__area}>
     <BrowserRouter basename={"/"}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/symptom">
+          <Symptom/>
         </Route>
       </Switch>
     </BrowserRouter>
