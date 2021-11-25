@@ -1,0 +1,10 @@
+.pagetitle {
+  flex-basis: 75%;
+  width: 70%;
+  margin-top: 15px;
+  font-family: "Spoqa Han Sans Bold";
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #494949;
+}
