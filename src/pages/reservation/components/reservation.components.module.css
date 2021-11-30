@@ -7,3 +7,38 @@
   font-size: 13px;
   line-height: 130%;
 }
+
+/**
+ * Picture
+ */
+.file__area {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 7px;
+  height: 95px;
+}
+
+.delete {
+  display: inline-block;
+  margin-left: 80%;
+  margin-top: 10%;
+}
+
+.picture {
+  width: 60px;
+  height: 60px;
+}
+
+.name {
+  display: block;
+  margin-top: 5px;
+  width: 61px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 130%;
+  color: #d0d0d0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

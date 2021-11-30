@@ -41,6 +41,11 @@ const Symptom = ({props, FileInput}) => {
             <h1>Symptom</h1>
             <Question question={question}/>
             <FileInput text="파일첨부" onFileChange={onFileChange} />
+            <div className={styles.img__area}>
+                {Object.keys(imgs).map((key) => (
+                    <Picture key={key} imgInfos={imgs[key]} />
+                ))}
+            </div>
         </>
     );
 }
