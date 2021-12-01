@@ -1,9 +1,11 @@
 import Routes from "./routes";
 
-function App() {
+function App({FileInput, GetDepartmentData}) {
   return (
     <>
       <Routes
+        FileInput={FileInput}
+        GetDepartmentData={GetDepartmentData}
       />
     </>
   );

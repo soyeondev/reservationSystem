@@ -3,9 +3,10 @@ import React from 'react';
  * custom component
  */
 import Question from './components/question';
+import { useState } from 'react';
 
 const question = "관련된 사진을 첨부해 주세요 \n(최대 10개, 개당 100MB)";
-const Symptom = ({props, FileInput}) => {
+const Symptom = ({props, FileInput, GetDepartmentData}) => {
   // 초기값
   const [imgs, setImages] = useState([
     {
@@ -14,6 +15,7 @@ const Symptom = ({props, FileInput}) => {
       fileURL: emptyImg,
     },
   ]);
+  const [symptom, setSymptom] = useState();
 
   // imgInfos에 들어갈 업로드된 파일 정보
   const [imgInfo, setImgInfo] = useState({
@@ -46,6 +48,12 @@ const Symptom = ({props, FileInput}) => {
                     <Picture key={key} imgInfos={imgs[key]} />
                 ))}
             </div>
+            <GetDepartmentData 
+                text="다음 단계"
+                href="/department"
+                type="symptom"
+                reservationValue={symptom}
+            />
         </>
     );
 }

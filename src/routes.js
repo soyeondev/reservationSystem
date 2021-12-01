@@ -9,7 +9,10 @@ const Routes = (props) => (
     <BrowserRouter basename={"/"}>
       <Switch>
         <Route exact path="/symptom">
-          <Symptom/>
+          <Symptom
+            FileInput={props.FileInput}
+            GetDepartmentData={props.GetDepartmentData}
+          />
         </Route>
       </Switch>
     </BrowserRouter>
