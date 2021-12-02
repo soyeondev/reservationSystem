@@ -1,0 +1,24 @@
+@value makerBlue, makerBlack, makerWhite from '../color.css';
+
+/* Warn */
+.warn__box {
+  width: 300px;
+  margin: 30px auto;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+}
+
+.warn__text {
+  display: inline-block;
+  width: 250px;
+  margin: 10px 15px 10px 4px;
+  font-size: 13px;
+  color: #797979;
+}
+
+.info {
+  float: left;
+  margin: 10px 0 0 10px;
+  width: 21px;
+  height: 21px;
+}
