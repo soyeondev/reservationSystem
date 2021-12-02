@@ -44,9 +44,25 @@ const Symptom = ({props, FileInput, GetDepartmentData}) => {
             <Question question={question}/>
             <FileInput text="파일첨부" onFileChange={onFileChange} />
             <div className={styles.img__area}>
-                {Object.keys(imgs).map((key) => (
-                    <Picture key={key} imgInfos={imgs[key]} />
-                ))}
+                {imgInfo.length > 0 ? 
+                // 첨부된 파일이 있는 경우
+                <>
+                    {Object.keys(imgInfos).map((key) => (
+                        <Picture
+                          key={key}
+                          imgInfos={imgInfos[key]}
+                          getImgInfos={getImgInfos}
+                        />
+                      ))}
+                </>
+                : 
+                // 첨부된 파일이 없는 경우
+                <>
+                    {Object.keys(imgs).map((key) => (
+                        <Picture key={key} imgInfos={imgs[key]} />
+                    ))}
+                </>
+                }
             </div>
             <GetDepartmentData 
                 text="다음 단계"
