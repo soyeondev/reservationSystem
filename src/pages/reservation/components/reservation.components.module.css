@@ -76,3 +76,24 @@
   line-height: 130%;
   color: #9f9f9f;
 }
+
+/* CardArea */
+.card__img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.card__img__area {
+  width: 180px;
+  margin: 44px auto;
+}
+
+.card__text {
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #9f9f9f;
+}
