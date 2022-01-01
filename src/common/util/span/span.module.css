@@ -8,3 +8,47 @@
   text-align: center;
   color: #494949;
 }
+
+/* span28Bold */
+.span__28__bold__area {
+  white-space: pre-wrap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.span__28__bold__area__mg {
+  margin-top: 80px;
+  margin-left: 9%;
+}
+
+/* Span28BoldDarkblue */
+.span__28__bold__darkblue__area {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  color: #31406f;
+}
+
+/* Span16Normal */
+.span__16__normal__area {
+  display: block;
+  white-space: pre-wrap;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #494949;
+}
+
+/* Spa14Normal */
+.span__14__normal {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 130%;
+  color: #494949;
+}
