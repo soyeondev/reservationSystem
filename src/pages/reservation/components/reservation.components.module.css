@@ -1,3 +1,51 @@
+@value makerBlue, makerBlack, makerWhite, makerGrey from '../../../common/color.css';
+
+.title {
+  width: 128px;
+  height: 18px;
+  margin: 5px;
+  color: #494949;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.diagnosis__info {
+  display: flex;
+  height: 90px;
+}
+.title__area {
+  margin: 20px 0 0 30px;
+}
+
+.info__area {
+  width: 65%;
+  text-align: right;
+  margin: 20px 0 0 0;
+}
+
+.treatment__type {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 130%;
+  color: #282828;
+}
+
+.treatment__fee {
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.blue {
+  color: makerBlue;
+}
+
+.seperation__bar {
+  width: 100%;
+  height: 10px;
+  background: #f6f6f6;
+}
+
 .question {
   display: block;
   margin: 10px auto;
@@ -6,22 +54,6 @@
   font-weight: bold;
   font-size: 13px;
   line-height: 130%;
-}
-
-/**
- * Picture
- */
-.file__area {
-  display: inline-flex;
-  flex-direction: column;
-  margin: 7px;
-  height: 95px;
-}
-
-.delete {
-  display: inline-block;
-  margin-left: 80%;
-  margin-top: 10%;
 }
 
 .picture {
@@ -43,6 +75,212 @@
   white-space: nowrap;
 }
 
+.file__area {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 7px;
+  height: 95px;
+}
+
+.delete {
+  display: inline-block;
+  margin-left: 80%;
+  margin-top: 10%;
+}
+
+/* 진료과 선택 */
+.departments__area {
+  width: 320px;
+  margin: 8%;
+}
+
+.eclipse {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+}
+
+.img__area {
+  display: inline-flex;
+  margin: 0 14px 30px 0;
+  width: 66px;
+  height: 85px;
+}
+
+.department__name {
+  display: block;
+  margin: 70px auto;
+  width: 66px;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: #797979;
+}
+
+.img__container {
+  position: absolute;
+  width: 40px;
+  margin: auto 0;
+}
+
+.department__img {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 의사 선택 */
+.hospital__wrap {
+  height: 80px;
+  padding: 25px;
+}
+
+.recommended__hospital__wrap {
+  height: 80px;
+  padding: 25px 45px 55px 45px;
+  background-color: rgba(0, 160, 210, 0.1);
+}
+
+.hospital__area {
+  display: flex;
+  margin: 0 auto;
+  width: 280px;
+  height: 75px;
+}
+
+.profile__area {
+  width: 28%;
+}
+
+.profile__img {
+  width: 60px;
+  height: 60px;
+}
+
+.hospital {
+  margin-left: 7px;
+}
+
+.hospital__info {
+  margin-bottom: 5px;
+}
+
+.spetialty__info {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #797979;
+}
+
+.waiting__info {
+  align-items: center;
+  padding: 4px 6px;
+  height: 24px;
+  background: rgba(0, 160, 210, 0.08);
+  border-radius: 2px;
+
+  font-size: 12px;
+  line-height: 130%;
+  color: #00a0d2;
+}
+
+.line {
+  margin: 0 auto;
+  width: 300px;
+  height: 1px;
+  background: #f6f6f6;
+}
+
+.recommend__text {
+  display: inline-block;
+  margin-bottom: 13px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 130%;
+  color: #00a0d2;
+}
+
+/* 예약 정보 확인 */
+.reservation__info__wrap {
+  height: 190px;
+  padding: 15px;
+}
+.reservation__info__detail__wrap {
+  height: 145px;
+  padding: 15px;
+}
+
+.reservation__info__wrap__title {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 280px;
+}
+
+.reservation__info__title {
+  margin-bottom: 8px;
+}
+
+.reservation__info__area {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 280px;
+  height: 60px;
+  font-size: 14px;
+}
+
+.reservation__info {
+  margin-left: 38px;
+}
+
+/* Payment */
+.payment__area {
+  padding: 32px 39px 1px 39px;
+}
+
+/* Terms */
+.terms__area {
+  height: 105px;
+  padding: 34px 24px 0 26px;
+  font-size: 14px;
+}
+
+.check__img {
+  width: 26px;
+  height: 26px;
+}
+
+.arrow__grey__img {
+  width: 16px;
+  height: 16px;
+}
+
+.cancle__terms__area {
+  width: 300px;
+}
+
+.terms__box__size {
+  width: 320px;
+  height: 54px;
+}
+
+/*  */
+.warning__box {
+  display: flex;
+  height: 70px;
+  background: #f6f6f6;
+  font-size: 11px;
+  line-height: 130%;
+  color: #9f9f9f;
+}
+
+.warning__text {
+  margin: 19px auto;
+}
+
 /* CardArea */
 .card__img {
   display: block;
@@ -62,4 +300,33 @@
   line-height: 130%;
   text-align: center;
   color: #9f9f9f;
+}
+
+/* CheckInfo */
+.check__info__area {
+  display: flex;
+  margin-top: 45px;
+}
+
+.check__info__img {
+  margin-right: 7px;
+  width: 24px;
+  height: 24px;
+}
+
+/* common */
+.bold {
+  font-weight: bold;
+}
+
+.fc__grey {
+  color: makerGrey;
+}
+
+.dp__blk {
+  display: block;
+}
+
+.dp__in__flx {
+  display: inline-flex;
 }
