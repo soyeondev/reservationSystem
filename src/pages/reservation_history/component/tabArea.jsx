@@ -13,6 +13,28 @@ import HistoryCount from "./historyCount";
 
 const TabArea = (props) => {
   const history = useHistory();
+
+  // 클릭 시에 리스트
+  const tabClickHandler = async (index, tabType) => {
+    switch (tabType) {
+      case 1:
+        setReservationType(RESERVATION_TYPE.reservationWait);
+        break;
+      case 2:
+        setReservationType(RESERVATION_TYPE.reservationComplate);
+        break;
+      case 4:
+        setReservationType(RESERVATION_TYPE.diagnosisComplate);
+        break;
+      case 9:
+        setReservationType(RESERVATION_TYPE.reservationCancle);
+        break;
+      default:
+        setReservationType(RESERVATION_TYPE.reservationWait);
+        break;
+    }
+  };
+
   const tabContArr = [
     {
       tabTitle: (
