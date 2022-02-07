@@ -8,6 +8,26 @@ const ReservationStatus = (props) => {
   const [imgSrc, setImgSrc] = useState("");
   const elementType = props.reservationInfo.type;
 
+  useEffect(() => {
+    switch (elementType) {
+      case 1:
+        setImgSrc(RESERVATION_IMAGE.reservationWait);
+        break;
+      case 2:
+        setImgSrc(RESERVATION_IMAGE.reservationComplate);
+        break;
+      case 4:
+        setImgSrc(RESERVATION_IMAGE.diagnosisComplate);
+        break;
+      case 9:
+        setImgSrc(RESERVATION_IMAGE.reservationCancel);
+        break;
+      default:
+        setImgSrc(RESERVATION_IMAGE.reservationCancel);
+        break;
+    }
+  }, []);
+
   return (
     <section className={styles.reservation__status__area}>
       <div className={styles.reservation__status__info__area}>
