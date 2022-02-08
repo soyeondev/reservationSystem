@@ -13,6 +13,45 @@ import HistoryCount from "./historyCount";
 
 const TabArea = (props) => {
   const history = useHistory();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [reservationData, setReservationData] = useState("");
+  const [reservationStatus, setReservationStatus] = useState(1);
+  const [reservationCount, setReservationCount] = useState(0);
+  const [reservationType, setReservationType] = useState("예약대기");
+  const [files, setFiles] = useState();
+  const [type, setType] = useState(1);
+
+  let offset = 0;
+
+  const reservationDataList = useSelector(
+    (state) => state.reservation.reservationDataList
+  );
+  const dispatch = useDispatch();
+
+  // 예약대기 default
+  useEffect(() => {
+    (function () {
+      const data = await props.getMedicalHistoryData.getReservationList(
+        reservationStatus,
+        offset
+      );
+      setReservationData(data.result.result);
+      setReservationCount(data.result.count);
+  
+      dispatch(
+        addReservationDataList({
+          type: "DELETE_DATA",
+          data: data,
+        })
+      );
+      dispatch(
+        addReservationDataList({
+          type: "ADD_DATA",
+          data: data,
+        })
+      );
+    })();
+  }, []);
 
   // 클릭 시에 리스트
   const tabClickHandler = async (index, tabType) => {
