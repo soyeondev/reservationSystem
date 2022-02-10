@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import classNames from "classnames";
 import styles from "./medical_history.components.module.css";
-import MedicalHistoryElement from "./medicalHistoryElement";
+import MedicalHistoryElement from "./historyElement";
 import { addReservationDataList } from "../../../counter/reservationSlice";
 
 /* data */
