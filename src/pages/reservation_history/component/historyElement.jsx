@@ -87,6 +87,21 @@ const HistoryElement = (props) => {
       <div className={styles.medical__history__info__area}>        
       </div>
       <div>
+        <button
+          className={
+            type === 1
+              ? styles.medical__history__button__waiting
+              : type === 2
+              ? styles.medical__history__button__complate
+              : type === 4
+              ? styles.medical__history__button__dignosis__complate
+              : type === 9
+              ? styles.medical__history__button__cancle
+              : styles.medical__history__button__complate
+          }
+        >
+          {props.reservationType}
+        </button>
       </div>
     </section>
   );
