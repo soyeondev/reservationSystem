@@ -80,10 +80,21 @@ const HistoryElement = (props) => {
 
   
   return (
-    <section
+    <article
       className={styles.medical__history__element__area}
       onClick={onClick}
     >
+      <section className={styles.medical__history__info__area}>
+        <div>
+          <img
+            src={medicalHistory}
+            className={styles.calendar__img}
+            alt="medical_history"
+          />
+          <span className={styles.medical__history__date}>{date}</span>
+          <span className={styles.medical__history__date}>{time}</span>
+        </div>
+      </section>
       <div className={styles.medical__history__info__area}>        
       </div>
       <div>
@@ -103,7 +114,7 @@ const HistoryElement = (props) => {
           {props.reservationType}
         </button>
       </div>
-    </section>
+    </article>
   );
 };
 
