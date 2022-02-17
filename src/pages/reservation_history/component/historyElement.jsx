@@ -94,9 +94,20 @@ const HistoryElement = (props) => {
           <span className={styles.medical__history__date}>{date}</span>
           <span className={styles.medical__history__date}>{time}</span>
         </div>
+        <div className={styles.medical__history__doc__area}>
+          <div>
+            <span className={styles.medical__history__doctor}>
+              {doctorName}
+            </span>
+            <span className={styles.medical__history__hospital}>
+              {hospitalName}
+            </span>
+          </div>
+          <div className={styles.medical__history__type}>
+            비대면진료({kind === 3 ? "전화진료" : "화상진료"})
+          </div>
+        </div>
       </section>
-      <div className={styles.medical__history__info__area}>        
-      </div>
       <div>
         <button
           className={
