@@ -6,6 +6,18 @@ import { useHistory } from "react-router-dom";
 import RESERVATION_TYPE from "../data/reservationType";
 
 const HistoryElement = (props) => {
+  const MedicalHistoryElement = (props) => {
+  const {
+    date,
+    time,
+    doctorName,
+    doctorkey,
+    hospitalName,
+    kind,
+    reservationkey,
+    status,
+    type,
+  } = props.reservationInfo;
   let getInfo;
 
   useEffect(() => {
