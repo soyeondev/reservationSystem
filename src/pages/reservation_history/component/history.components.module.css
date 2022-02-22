@@ -66,3 +66,76 @@
   width: 18px;
   height: 18px;
 }
+
+.history__date {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #494949;
+}
+.history__doc__area {
+  margin-left: 8%;
+  margin-top: 4%;
+}
+.history__doctor {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #494949;
+}
+
+.history__hospital {
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #9f9f9f;
+}
+
+.history__type {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #494949;
+}
+
+.history__button {
+  width: 65px;
+  height: 35px;
+  margin-top: 35%;
+  color: #797979;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #797979;
+}
+
+.history__button__waiting {
+  width: 65px;
+  height: 35px;
+  margin-top: 35%;
+  color: #797979;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #797979;
+}
+
+.history__button__complate {
+  width: 65px;
+  height: 35px;
+  margin-top: 35%;
+  background: #f3f9ff;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #00a0d2;
+}
