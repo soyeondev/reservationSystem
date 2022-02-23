@@ -139,3 +139,53 @@
   line-height: 130%;
   color: #00a0d2;
 }
+.history__button__dignosis__complate {
+  width: 65px;
+  height: 35px;
+  margin-top: 35%;
+  background: #3cdbc0;
+  background-color: rgba(60, 219, 192, 0.08);
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #00c19f;
+}
+
+.history__button__cancle {
+  width: 65px;
+  height: 35px;
+  margin-top: 35%;
+  background-color: rgba(249, 87, 0, 0.08);
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 130%;
+  color: #f95700;
+}
+
+/* HistoryCount */
+.history__count__area {
+  width: 100%;
+  height: 40px;
+  background: #f6f6f6;
+}
+.history__count__text {
+  display: inline-block;
+  margin-left: 8%;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #494949;
+}
+
+/* ReservationStatus */
+.reservation__status__area {
+  display: flex;
+  padding: 8%;
+}
+.reservation__status__info__area {
+  width: 80%;
+}
