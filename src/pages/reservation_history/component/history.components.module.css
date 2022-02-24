@@ -189,3 +189,23 @@
 .reservation__status__info__area {
   width: 80%;
 }
+.reservation__status__info__text1 {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 130%;
+  color: #494949;
+}
+.reservation__status__info__text2 {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #9f9f9f;
+}
+.reservation__status__img {
+  width: 46px;
+  height: 46px;
+}
