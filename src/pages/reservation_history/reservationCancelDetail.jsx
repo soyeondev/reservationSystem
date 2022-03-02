@@ -3,8 +3,6 @@ import styles from "./medical_history.module.css";
 import { useLocation } from "react-router";
 import Header from "components/header/header";
 import ReservationStatus from "./component/reservationStatus";
-import MedicalTreatmentInfo from "pages/reservation/components/medicalTreatmentInfo";
-import MySymptom from "./component/mySymptom";
 
 const ReservationCancelDetail = (props) => {
   const location = useLocation();
