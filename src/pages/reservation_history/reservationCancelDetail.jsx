@@ -14,7 +14,7 @@ const ReservationCancelDetail = (props) => {
 
   return (
     <section>
-      {/* <Header title="진료 내역 상세" /> */}
+      {/* <Header title="예약 내역 상세" /> */}
       <ReservationStatus
         reservationType="예약취소"
         reservationInfo={reservationInfo}

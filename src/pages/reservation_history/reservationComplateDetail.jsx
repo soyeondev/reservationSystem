@@ -16,7 +16,6 @@ const ReservationComplateDetail = (props) => {
   const onClick = async () => {
     const entry = {
       reason: "",
-      recordkey: "20a5fe44-2feb-45a8-9a16-dfaa7118fea1",
       reservationkey: reservationInfo.idx,
       status: "29",
     };
@@ -27,7 +26,7 @@ const ReservationComplateDetail = (props) => {
 
   return (
     <section>
-      {/* <Header title="내역 상세" /> */}
+      {/* <Header title="예약 내역 상세" /> */}
       <ReservationStatus
         reservationType="예약완료"
         reservationInfo={reservationInfo}
